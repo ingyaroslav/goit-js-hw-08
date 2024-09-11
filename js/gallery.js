@@ -93,7 +93,7 @@ const selectImage = event => {
   if (event.target.nodeName === 'IMG') {
     event.preventDefault();
     const imageInstance = basicLightbox.create(
-      '<img src ="${event.target.dataset.source}">',
+      `<img src ="${event.target.dataset.source}">`,
       { closable: true }
     );
     imageInstance.show();
