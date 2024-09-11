@@ -71,7 +71,7 @@ const images = [
 const createGallery = images => {
   let items = '';
   images.forEach(photo => {
-    items += '
+    items += `
         <li class="gallery-item">
         <a class="gallery-link" href=${photo.original}>
             <img
@@ -81,7 +81,7 @@ const createGallery = images => {
             alt=${photo.description}
             />
         </a>
-        </li>';
+        </li>`;
   });
   gallery.insertAdjacentHTML('afterbegin', items);
   gallery.preve;
